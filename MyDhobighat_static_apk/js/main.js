@@ -1,48 +1,3 @@
-// const supabaseClient = window.supabase.createClient(
-//   "https://nffbecsrmbtfqqypzuxi.supabase.co",
-//   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5mZmJlY3NybWJ0ZnFxeXB6dXhpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUxMDkxNjAsImV4cCI6MjA5MDY4NTE2MH0.gfBFIwg5UgIDA4rnmI6amOay31RfurZFuOCa_hvsO1Y"
-// );
-
-
-
-// let selectedService = null;
-
-// // Select service
-// window.selectService = async (service) => {
-//   selectedService = service;
-
-//   const { data } = await supabaseClient.auth.getUser();
-
-//   if (!data.user) {
-//     // Not logged in → go login
-//     localStorage.setItem("selectedService", service);
-//     window.location.href = "login.html";
-//     return;
-//   }
-
-//   // Logged in → go dashboard
-//   localStorage.setItem("selectedService", service);
-//   window.location.href = "dashboard.html";
-// };
-
-// // Book button
-// document.getElementById("bookBtn")?.addEventListener("click", async () => {
-//   const { data } = await supabaseClient.auth.getUser();
-
-//   if (!data.user) {
-//     window.location.href = "login.html";
-//   } else {
-//     window.location.href = "dashboard.html";
-//   }
-// });
-
-
-
-
-
-
-
-
 
 
 
@@ -92,18 +47,6 @@ window.selectService = async (service) => {
   window.location.href = "dashboard.html";
 };
 
-// Book button
-// document.getElementById("bookBtn")?.addEventListener("click", async () => {
-
-//   const { data } = await supabaseClient.auth.getSession();
-//   const user = data.session?.user;
-
-//   if (!user) {
-//     window.location.href = "login.html";
-//   } else {
-//     window.location.href = "dashboard.html";
-//   }
-// });
 
 
 document.querySelectorAll(".bookBtn").forEach(btn => {
