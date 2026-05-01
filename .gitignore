@@ -1,0 +1,12 @@
+# React
+MyDhobighat_React/node_modules/
+MyDhobighat_React/dist/
+MyDhobighat_React/.env
+
+# Static project
+MyDhobighat_static_apk/js/config.js
+
+# General
+node_modules/
+.env
+.DS_Store
