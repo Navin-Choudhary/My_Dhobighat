@@ -105,6 +105,19 @@ navigate("/");
 
 
 
+async function handleGoogleLogin(){
+
+await supabase.auth.signInWithOAuth({
+  provider: "google",
+  options: {
+    redirectTo: window.location.origin
+  }
+});
+
+}
+
+
+
 
 
 
@@ -139,6 +152,14 @@ onClick={handleAuth}
 className="w-full bg-blue-900 text-white p-3 rounded font-semibold"
 >
 {isSignup ? "Create Account" : "Login"}
+</button>
+
+
+<button
+onClick={handleGoogleLogin}
+className="w-full border border-gray-300 p-3 rounded mt-4 font-semibold"
+>
+Continue with Google
 </button>
 
 

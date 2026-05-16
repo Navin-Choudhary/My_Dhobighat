@@ -23,7 +23,7 @@ const user = data.session?.user;
 
 if(user){
 
-/* 🔥 IMPORTANT: don't overwrite role */
+/*  IMPORTANT: don't overwrite role */
 await supabase
 .from("profiless")
 .upsert([
